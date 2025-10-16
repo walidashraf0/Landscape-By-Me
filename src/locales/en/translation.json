@@ -1,5 +1,4 @@
 {
-    
     "header.home": "Home",
     "header.services": "Services",
     "header.portfolio": "Portfolio",
@@ -8,12 +7,10 @@
     "header.departments": "Departments",
     "header.phone": "+2011011053973",
     "header.getEstimate": "Get Free Estimate",
-    
     "hero.title": "Transform Your Outdoor Space",
     "hero.subtitle": "Expert landscaping services to create the garden of your dreams. From design to installation, we bring your vision to life.",
     "hero.cta1": "Get Free Estimate",
     "hero.cta2": "View Our Work",
-    
     "services.title": "Our Services",
     "services.subtitle": "Comprehensive landscaping solutions tailored to your needs",
     "services.landscapeDesign.title": "Landscape Design",
@@ -25,7 +22,6 @@
     "services.irrigation.title": "Irrigation Systems",
     "services.irrigation.description": "Efficient, automated irrigation systems designed to keep your landscape healthy while conserving water. Installation, maintenance, and repair services available.",
     "services.learnMore": "Learn More",
-    
     "portfolio.title": "Our Portfolio",
     "portfolio.subtitle": "Explore our recent projects and see the quality of our work",
     "portfolio.residential": "Residential",
@@ -36,7 +32,6 @@
     "portfolio.smallSpace": "Small Space Transformation",
     "portfolio.summerLandscape": "Summer Landscape",
     "portfolio.lawnRenovation": "Lawn Renovation",
-    
     "whyChooseUs.title": "Why Choose Us",
     "whyChooseUs.subtitle": "We're committed to delivering exceptional results that exceed your expectations",
     "whyChooseUs.experience.title": "20+ Years Experience",
@@ -47,7 +42,6 @@
     "whyChooseUs.quality.description": "100% satisfaction guarantee on all projects",
     "whyChooseUs.timely.title": "Timely Completion",
     "whyChooseUs.timely.description": "Projects completed on schedule and within budget",
-    
     "testimonials.title": "What Our Clients Say",
     "testimonials.subtitle": "Don't just take our word for it - hear from our satisfied customers",
     "testimonials.sarah.text": "Absolutely incredible work! They transformed our backyard into a beautiful oasis. The team was professional, punctual, and exceeded our expectations.",
@@ -56,7 +50,6 @@
     "testimonials.michael.name": "Michael Chen",
     "testimonials.emily.text": "From design to completion, the entire process was seamless. Our new patio and garden are exactly what we envisioned. Thank you!",
     "testimonials.emily.name": "Emily Rodriguez",
-    
     "contact.title": "Get In Touch",
     "contact.subtitle": "Ready to transform your outdoor space? Contact us today for a free estimate",
     "contact.form.name": "Name",
@@ -81,13 +74,20 @@
     "contact.info.sunday": "Sunday: Closed",
 
     "waters.title": "Waterfalls and Fountains",
+    "waters.description": "One of the most beautiful touches you can add to your garden is the sound of water running through your garden, making it a quiet place.",
     "stone.title": "Stone Decoration",
+    "stone.description": "There are many shapes, types and tastes, including modern and classic. You can coordinate them in your garden to give a different and attractive appearance.",
     "grass.title": "Natural Grass",
+    "grass.description": "All types and shapes of natural grass can be added to your garden if you love nature.",
     "irrigation.title": "Irrigation Networks",
+    "irrigation.description": "You can add irrigation networks to reduce the temperature of the garden and irrigate plants, trees and herbs.",
     "wallgrass.title": "Wall Grass",
+    "wallgrass.description": "This is one of the best touches that gives an attractive appearance to your garden. We have many shapes and many arrangements. You can take a look at our previous work.",
     "glass.title": "Glass Rooms",
+    "glass.description": "We have many designs for modern glass rooms that give your home a special taste. Check them out now.",
+    "awings.title": "Awnings, pergolas and screens",
+    "awings.description": "We have many shapes and designs for these pergolas. You can add them now to your garden with a uniquely designed seating area to make your garden more distinctive.",
 
-    
     "footer.description": "Professional landscaping services to transform your outdoor space into a beautiful oasis.",
     "footer.quickLinks": "Quick Links",
     "footer.services": "Services",
@@ -98,6 +98,5 @@
     "footer.irrigation": "Irrigation",
     "footer.whatsappUs": "WhatsApp Us",
     "footer.copyright": "© 2025 GreenScape Landscaping. All rights reserved.",
-    
     "common.brandName": "El Walid"
 }

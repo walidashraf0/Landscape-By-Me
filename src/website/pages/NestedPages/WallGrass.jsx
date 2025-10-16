@@ -34,93 +34,123 @@ const WallGrass = () => {
   const imagesWall = [
     {
       img: img14,
+      alt: "Wall grass design 14"
     },
     {
       img: img15,
+      alt: "Wall grass design 15"
     },
     {
       img: img16,
+      alt: "Wall grass design 16"
     },
     {
       img: img17,
+      alt: "Wall grass design 17"
     },
     {
       img: img18,
+      alt: "Wall grass design 18"
     },
     {
       img: img19,
+      alt: "Wall grass design 19"
     },
     {
       img: img20,
+      alt: "Wall grass design 20"
     },
     {
       img: img21,
+      alt: "Wall grass design 21"
     },
     {
       img: img22,
+      alt: "Wall grass design 22"
     },
     {
       img: img23,
+      alt: "Wall grass design 23"
     },
     {
       img: img24,
+      alt: "Wall grass design 24"
     },
     {
       img: img25,
+      alt: "Wall grass design 25"
     },
     {
       img: img26,
+      alt: "Wall grass design 26"
     },
     {
       img: img27,
+      alt: "Wall grass design 27"
     },
     {
       img: img28,
+      alt: "Wall grass design 28"
     },
     {
       img: img1,
+      alt: "Wall grass design 1"
     },
     {
       img: img2,
+      alt: "Wall grass design 2"
     },
     {
       img: img3,
+      alt: "Wall grass design 3"
     },
     {
       img: img4,
+      alt: "Wall grass design 4"
     },
     {
       img: img5,
+      alt: "Wall grass design 5"
     },
     {
       img: img6,
+      alt: "Wall grass design 6"
     },
     {
       img: img7,
+      alt: "Wall grass design 7"
     },
     {
       img: img8,
+      alt: "Wall grass design 8"
     },
     {
       img: img9,
+      alt: "Wall grass design 9"
     },
     {
       img: img9,
+      alt: "Wall grass design 9"
     },
     {
       img: img9,
+      alt: "Wall grass design 9"
     },
     {
       img: img10,
+      alt: "Wall grass design 10"
     },
     {
       img: img11,
+      alt: "Wall grass design 11"
     },
     {
       img: img12,
+      alt: "Wall grass design 12"
     },
     {
       img: img13,
+      alt: "Wall grass design 13"
     },
   ];
 
@@ -139,7 +169,7 @@ const WallGrass = () => {
             <img
               key={index}
               src={el.img}
-              alt="Water One"
+              alt={el.alt}
               className="rounded-md object-cover w-full md:max-w-4xl"
             />
           ))}

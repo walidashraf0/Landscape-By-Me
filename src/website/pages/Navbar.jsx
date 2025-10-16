@@ -107,6 +107,12 @@ const Navbar = () => {
                   >
                     {t("wallgrass.title")}
                   </Link>
+                  <Link
+                    to="/مظلات"
+                    className="block px-4 py-2 text-xl font-semibold text-gray-700 hover:bg-green-50 hover:text-green-600"
+                  >
+                    {t("awings.title")}
+                  </Link>
                 </div>
               </div>
             </nav>
@@ -236,6 +242,12 @@ const Navbar = () => {
                       className="block px-4 py-2 text-lg font-semibold text-gray-700 hover:bg-green-50 hover:text-green-600 w-full text-center"
                     >
                       {t("wallgrass.title")}
+                    </Link>
+                    <Link
+                      to="/مظلات"
+                      className="block px-4 py-2 text-lg font-semibold text-gray-700 hover:bg-green-50 hover:text-green-600 w-full text-center"
+                    >
+                      {t("awings.title")}
                     </Link>
                   </div>
                 )}

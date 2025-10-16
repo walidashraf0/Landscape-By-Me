@@ -16,6 +16,13 @@ import img16 from "@/assets/images/homepage/img16.jpeg";
 import img17 from "@/assets/images/homepage/img17.jpeg";
 import img18 from "@/assets/images/homepage/img18.jpg";
 import img19 from "@/assets/images/homepage/img19.jpeg";
+import glassRomms from "@/assets/images/glass/img1.jpeg";
+import waters from "@/assets/images/waters/img1.jpeg";
+import stone from "@/assets/images/stones/img1.jpeg";
+import grass from "@/assets/images/natural/img9.webp";
+import network from "@/assets/images/networks/img6.jpeg";
+import wall from "@/assets/images/wall/img12.jpeg";
+import awing from "@/assets/images/awings/img1.jpeg";
 import {
   Award,
   Clock,
@@ -29,24 +36,46 @@ import {
 
 export const getServices = (t) => [
   {
-    icon: <Leaf className="w-12 h-12" />,
-    title: t("services.landscapeDesign.title"),
-    description: t("services.landscapeDesign.description"),
+    img: glassRomms,
+    title: t("glass.title"),
+    description: t("glass.description"),
+    path: "/غرف-زجاجية",
   },
   {
-    icon: <TreeDeciduous className="w-12 h-12" />,
-    title: t("services.lawnCare.title"),
-    description: t("services.lawnCare.description"),
+    img: waters,
+    title: t("waters.title"),
+    description: t("waters.description"),
+    path: "/شلالات-نوافير",
   },
   {
-    icon: <Hammer className="w-12 h-12" />,
-    title: t("services.hardscaping.title"),
-    description: t("services.hardscaping.description"),
+    img: stone,
+    title: t("stone.title"),
+    description: t("stone.description"),
+    path: "/ديكورات-حجرية",
   },
   {
-    icon: <Droplets className="w-12 h-12" />,
-    title: t("services.irrigation.title"),
-    description: t("services.irrigation.description"),
+    img: grass,
+    title: t("grass.title"),
+    description: t("grass.description"),
+    path: "/عشب-طبيعي",
+  },
+  {
+    img: network,
+    title: t("irrigation.title"),
+    description: t("irrigation.description"),
+    path: "/شبكات-ري",
+  },
+  {
+    img: wall,
+    title: t("wallgrass.title"),
+    description: t("wallgrass.description"),
+    path: "/عشب-جداري",
+  },
+  {
+    img: awing,
+    title: t("awings.title"),
+    description: t("awings.description"),
+    path: "/مظلات",
   },
 ];
 

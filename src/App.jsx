@@ -8,6 +8,7 @@ import GlassRomms from "./website/pages/NestedPages/GlassRomms";
 import NaturalGrass from "./website/pages/NestedPages/NaturalGrass";
 import IrrigationNetworks from "./website/pages/NestedPages/IrrigationNetworks";
 import WallGrass from "./website/pages/NestedPages/WallGrass";
+import Awings from "./website/pages/NestedPages/Awings";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="عشب-طبيعي" element={<NaturalGrass />} />
           <Route path="شبكات-ري" element={<IrrigationNetworks />} />
           <Route path="عشب-جداري" element={<WallGrass />} />
+          <Route path="مظلات" element={<Awings />} />
         </Route>
       </Routes>
     </>
