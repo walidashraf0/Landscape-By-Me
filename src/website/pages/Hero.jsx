@@ -1,6 +1,7 @@
 import HeroImg from "@/assets/images/homepage/hero.jpg";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -27,11 +28,15 @@ const Hero = () => {
             <p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-200">
               {t("hero.subtitle")}
             </p>
-            <Button
-              size={"lg"}
-              className={"bg-green-600 hover:bg-green-700 text-lg px-8"}
-            >
-              {t("hero.cta1")}
+            <Button size={"lg"} className="bg-green-600 hover:bg-green-700 text-lg px-8">
+              <Link
+                to="https://wa.me/+201011053973"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2"
+              >
+                {t("contact.info.whatsappText")}
+              </Link>
             </Button>
           </div>
         </div>
