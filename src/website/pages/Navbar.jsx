@@ -157,31 +157,31 @@ const Navbar = () => {
           {isOpen && (
             <nav className="md:hidden flex flex-col items-center space-y-3 mt-4 pb-4">
               <Link
-                to="#home"
+                to="/#home"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.home")}
               </Link>
               <Link
-                to="#services"
+                to="/#services"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.services")}
               </Link>
               <Link
-                to="#portfolio"
+                to="/#portfolio"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.portfolio")}
               </Link>
               <Link
-                to="#about"
+                to="/#about"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.about")}
               </Link>
               <Link
-                to="#contact"
+                to="/#contact"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.contact")}
