@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import { VitePluginSitemap } from "vite-plugin-sitemap";
+import sitemap from "vite-plugin-sitemap";
 
 // Define paths for sitemap
 const paths = [
@@ -20,10 +20,10 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    VitePluginSitemap({
-      hostname: "https://your-domain.com", // <-- change to your domain
-      outDir: "dist", // where your build output goes
-      routes: paths,
+    sitemap({
+      hostname: "https://your-domain.com",
+      outDir: "dist",
+      routes: paths
     }),
   ],
   resolve: {
