@@ -32,6 +32,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "@/components/ui/ImageModal";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "../../../components/SEO";
 
 const Waters = () => {
   const { t } = useTranslation();
@@ -71,6 +72,7 @@ const Waters = () => {
 
   return (
     <>
+      <SEO title={t("waters.title")} />
       <Gallery title={t("waters.title")} images={imagesWater} />
     </>
   );

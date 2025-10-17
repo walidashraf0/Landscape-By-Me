@@ -7,6 +7,7 @@ import Heading from "../componenets/Heading";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../../components/SEO";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -35,6 +36,11 @@ const Contact = () => {
 
   return (
     <>
+      <SEO 
+        title="Contact Us - Landscape By Me" 
+        description="Get in touch with our landscaping experts for consultations, quotes, or any questions about our services."
+        keywords={["contact", "landscaping services", "consultation", "quote"]}
+      />
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="container mx-auto px-4">

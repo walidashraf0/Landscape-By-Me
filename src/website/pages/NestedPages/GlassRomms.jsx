@@ -10,6 +10,7 @@ import img9 from "@/assets/images/glass/img9.jpeg";
 import img10 from "@/assets/images/glass/img10.jpeg";
 import { useTranslation } from "react-i18next";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "@/components/SEO";
 
 const GlassRomms = () => {
   const { t } = useTranslation();
@@ -67,6 +68,7 @@ const GlassRomms = () => {
 
   return (
     <>
+      <SEO title={t("glass.title")} />
       <Gallery title={t("glass.title")} images={imagesGlassRooms} />
     </>
   );

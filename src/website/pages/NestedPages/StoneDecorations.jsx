@@ -17,6 +17,7 @@ import img16 from "@/assets/images/stones/img16.jpeg";
 
 import { useTranslation } from "react-i18next";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "@/components/SEO";
 
 const StoneDecorations = () => {
   const { t } = useTranslation();
@@ -90,6 +91,7 @@ const StoneDecorations = () => {
 
   return (
     <>
+      <SEO title={t("stone.title")} />
       <Gallery title={t("stone.title")} images={imagesStones} />
     </>
   );

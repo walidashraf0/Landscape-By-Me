@@ -10,6 +10,7 @@ import img9 from "@/assets/images/awings/img9.jpeg";
 import img10 from "@/assets/images/awings/img10.jpeg";
 import { useTranslation } from "react-i18next";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "@/components/SEO";
 
 const Awings = () => {
   const { t } = useTranslation();
@@ -67,6 +68,7 @@ const Awings = () => {
 
   return (
     <>
+      <SEO title={t("awings.title")} />
       <Gallery title={t("awings.title")} images={awings} />
     </>
   );

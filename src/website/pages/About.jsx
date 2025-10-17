@@ -1,5 +1,6 @@
 import { getWhyChooseUs } from "@/data/constants";
 import { useTranslation } from "react-i18next";
+import SEO from "../../components/SEO";
 
 const About = () => {
   const { t } = useTranslation();
@@ -7,6 +8,11 @@ const About = () => {
 
   return (
     <>
+      <SEO 
+        title="About Us - Landscape By Me" 
+        description="Learn about our landscaping company, our values, and why customers choose us for their landscaping needs."
+        keywords={["about us", "landscaping company", "professional landscaping"]}
+      />
       {/* Why Choose Us */}
       <section id="about" className="py-20 bg-green-600 text-white">
         <div className="container mx-auto px-4">

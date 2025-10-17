@@ -30,6 +30,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "@/components/ui/ImageModal";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "@/components/SEO";
 
 const WallGrass = () => {
   const { t } = useTranslation();
@@ -159,6 +160,7 @@ const WallGrass = () => {
 
   return (
     <>
+      <SEO title={t("wallgrass.title")} />
       <Gallery title={t("wallgrass.title")} images={imagesWall} />
     </>
   );

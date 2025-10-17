@@ -14,6 +14,7 @@ import img13 from "@/assets/images/natural/img13.webp";
 import img14 from "@/assets/images/natural/img14.webp";
 import { useTranslation } from "react-i18next";
 import Gallery from "@/website/componenets/Gallery";
+import SEO from "@/components/SEO";
 
 const NaturalGrass = () => {
   const { t } = useTranslation();
@@ -71,6 +72,7 @@ const NaturalGrass = () => {
 
   return (
     <>
+      <SEO title={t("grass.title")} />
       <Gallery title={t("grass.title")} images={imagesNatural} />
     </>
   );

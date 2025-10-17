@@ -7,6 +7,7 @@ import img6 from "@/assets/images/networks/img6.jpeg";
 import img7 from "@/assets/images/networks/img7.jpeg";
 import img8 from "@/assets/images/networks/img8.jpeg";
 import img9 from "@/assets/images/networks/img9.jpeg";
+import SEO from "@/components/SEO";
 import Gallery from "@/website/componenets/Gallery";
 import { useTranslation } from "react-i18next";
 
@@ -54,6 +55,7 @@ const IrrigationNetworks = () => {
 
   return (
     <>
+      <SEO title={t("irrigation.title")} />
       <Gallery title={t("irrigation.title")} images={imagesNetorks} />
     </>
   );
