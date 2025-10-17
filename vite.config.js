@@ -23,7 +23,8 @@ export default defineConfig({
     sitemap({
       hostname: "https://your-domain.com",
       outDir: "dist",
-      routes: paths
+      routes: paths,
+      generateRobotsTxt: false, 
     }),
   ],
   resolve: {
