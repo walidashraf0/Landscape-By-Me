@@ -31,11 +31,10 @@ import img30 from "@/assets/images/waters/img30.jpeg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "@/components/ui/ImageModal";
+import Gallery from "@/website/componenets/Gallery";
 
 const Waters = () => {
   const { t } = useTranslation();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [initialSlide, setInitialSlide] = useState(0);
 
   const imagesWater = [
     { img: img1 },
@@ -70,42 +69,9 @@ const Waters = () => {
     { img: img30 },
   ];
 
-  const openModal = (index) => {
-    setInitialSlide(index);
-    setModalOpen(true);
-  };
-
   return (
     <>
-      <div className="min-h-screen py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center w-full">
-            <span className="border-2 h-0.5 text-black bg-black flex-1"></span>
-            <h2 className="mx-2 bg-green-700 text-white px-4 py-2 rounded-md">
-              {t('waters.title')}
-            </h2>
-            <span className="border-2 h-0.5 text-black bg-black flex-1"></span>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 py-12">
-            {imagesWater.map((el, index) => (
-              <img
-                key={index}
-                src={el.img}
-                alt={`Water ${index + 1}`}
-                className="rounded-md object-cover w-full md:max-w-4xl cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => openModal(index)}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <ImageModal 
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        images={imagesWater}
-        initialSlide={initialSlide}
-      />
+      <Gallery title={t("waters.title")} images={imagesWater} />
     </>
   );
 };

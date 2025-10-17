@@ -29,11 +29,10 @@ import img28 from "@/assets/images/wall/img28.jpeg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import ImageModal from "@/components/ui/ImageModal";
+import Gallery from "@/website/componenets/Gallery";
 
 const WallGrass = () => {
   const { t } = useTranslation();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [initialSlide, setInitialSlide] = useState(0);
 
   const imagesWall = [
     {
@@ -158,42 +157,9 @@ const WallGrass = () => {
     },
   ];
 
-  const openModal = (index) => {
-    setInitialSlide(index);
-    setModalOpen(true);
-  };
-
   return (
     <>
-      <div className="min-h-screen py-20 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center w-full">
-            <span className="border-2 h-0.5 text-black bg-black flex-1"></span>
-            <h2 className="mx-2 bg-green-700 text-white px-4 py-2 rounded-md">
-              {t("wallgrass.title")}
-            </h2>
-            <span className="border-2 h-0.5 text-black bg-black flex-1"></span>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 py-12">
-            {imagesWall.map((el, index) => (
-              <img
-                key={index}
-                src={el.img}
-                alt={el.alt}
-                className="rounded-md object-cover w-full md:max-w-4xl cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => openModal(index)}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <ImageModal
-        isOpen={modalOpen}
-        onClose={() => setModalOpen(false)}
-        images={imagesWall}
-        initialSlide={initialSlide}
-      />
+      <Gallery title={t("wallgrass.title")} images={imagesWall} />
     </>
   );
 };

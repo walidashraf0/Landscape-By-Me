@@ -36,7 +36,7 @@ const Navbar = () => {
 
             <nav className="hidden md:flex items-center space-x-8">
               <a
-                href="/#home"
+                href="/"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.home")}
@@ -163,7 +163,7 @@ const Navbar = () => {
           {isOpen && (
             <nav className="md:hidden flex flex-col items-center space-y-3 mt-4 pb-4">
               <Link
-                to="/#home"
+                to="/"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.home")}

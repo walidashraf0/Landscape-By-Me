@@ -130,8 +130,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-start flex-col">
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between">
+            <div className="flex items-center md:items-start flex-col">
               <p>{t("footer.copyright")}</p>
               <p>
                 {t("footer.designedBy")}:{" "}
