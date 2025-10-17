@@ -1,5 +1,12 @@
-import { Leaf } from "lucide-react";
+import {
+  Facebook,
+  Leaf,
+  Linkedin,
+  MessageCircleMore,
+  PhoneCall,
+} from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -60,10 +67,41 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">{t("footer.services")}</h4>
               <ul className="space-y-2">
-                <li className="text-gray-400">{t("footer.landscapeDesign")}</li>
-                <li className="text-gray-400">{t("footer.lawnCare")}</li>
-                <li className="text-gray-400">{t("footer.hardscaping")}</li>
-                <li className="text-gray-400">{t("footer.irrigation")}</li>
+                <li className="text-gray-400">
+                  <Link to={"/غرف-زجاجية"} className="hover:text-green-600">
+                    {t("glass.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/شلالات-نوافير"} className="hover:text-green-600">
+                    {t("waters.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/ديكورات-حجرية"} className="hover:text-green-600">
+                    {t("stone.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/عشب-طبيبعي"} className="hover:text-green-600">
+                    {t("grass.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/شبكات-ري"} className="hover:text-green-600">
+                    {t("irrigation.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/عشب-جداري"} className="hover:text-green-600">
+                    {t("wallgrass.title")}
+                  </Link>
+                </li>
+                <li className="text-gray-400">
+                  <Link to={"/مظلات"} className="hover:text-green-600">
+                    {t("awings.title")}
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -73,21 +111,45 @@ const Footer = () => {
                 <li className="text-gray-400">{t("header.phone")}</li>
                 <li className="text-gray-400">walidashraf050@gmail.com</li>
                 <li>
-                  <a
-                    href="https://wa.me/+201011053973"
+                  <Link
+                    to="https://wa.me/+201011053973"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-600 hover:text-green-500 transition-colors"
                   >
                     {t("footer.whatsappUs")}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>{t("footer.copyright")}</p>
+          <div className="border-t border-gray-800 pt-8 text-center text-gray-400 flex flex-col md:flex-row items-center justify-between">
+            <div className="flex items-start flex-col">
+              <p>{t("footer.copyright")}</p>
+              <p>
+                {t("footer.designedBy")}:{" "}
+                <span className="text-green-500">{t("footer.myName")}</span>
+              </p>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Link to="tel:+201011053973">
+                <PhoneCall className="text-green-500" />
+              </Link>
+              <Link
+                to="https://wa.me/+201011053973"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircleMore className="text-white" />
+              </Link>
+              <Link to={"https://www.facebook.com/Walid3455"}>
+                <Facebook className="text-blue-700" />
+              </Link>
+              <Link to={"https://www.linkedin.com/in/walid-ashraf1/"}>
+                <Linkedin className="text-blue-500" />
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

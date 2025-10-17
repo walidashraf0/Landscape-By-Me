@@ -4,6 +4,8 @@ import L from "leaflet";
 import { PhoneCall, MessageCircle } from "lucide-react";
 
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -44,22 +46,30 @@ const OurLocation = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-        <a
-          href={`tel:${phoneNumber}`}
-          className="flex items-center justify-center gap-2 bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors text-lg font-medium"
+        <Button
+          size={"lg"}
+          className="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors text-lg font-medium"
         >
-          <PhoneCall /> {t("callUs")}
-        </a>
-        <a
-          href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+          <Link to={`tel:${phoneNumber}`} className="flex items-center justify-center gap-2">
+            <PhoneCall /> {t("callUs")}
+          </Link>
+        </Button>
+        <Button
+          size={"lg"}
+          className="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-700 transition-colors text-lg font-medium"
+        >
+          <Link
+          to={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
             whatsappMessage
           )}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 bg-green-500 text-white py-3 px-6 rounded-lg hover:bg-green-600 transition-colors text-lg font-medium"
+          className="flex items-center justify-center gap-2"
         >
           <MessageCircle /> {t("footer.whatsappUs")}
-        </a>
+        </Link>
+        </Button>
+        
       </div>
     </div>
   );

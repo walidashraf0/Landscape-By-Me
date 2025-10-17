@@ -29,9 +29,13 @@ import img28 from "@/assets/images/waters/img28.jpeg";
 import img29 from "@/assets/images/waters/img29.jpeg";
 import img30 from "@/assets/images/waters/img30.jpeg";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import ImageModal from "@/components/ui/ImageModal";
 
 const Waters = () => {
-const { t } = useTranslation();
+  const { t } = useTranslation();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [initialSlide, setInitialSlide] = useState(0);
 
   const imagesWater = [
     { img: img1 },
@@ -66,6 +70,11 @@ const { t } = useTranslation();
     { img: img30 },
   ];
 
+  const openModal = (index) => {
+    setInitialSlide(index);
+    setModalOpen(true);
+  };
+
   return (
     <>
       <div className="min-h-screen py-20 bg-gray-100">
@@ -80,15 +89,23 @@ const { t } = useTranslation();
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-4 py-12">
             {imagesWater.map((el, index) => (
               <img
-              key={index}
+                key={index}
                 src={el.img}
-                alt="Water One"
-                className="rounded-md object-cover w-full md:max-w-4xl"
+                alt={`Water ${index + 1}`}
+                className="rounded-md object-cover w-full md:max-w-4xl cursor-pointer hover:opacity-90 transition-opacity"
+                onClick={() => openModal(index)}
               />
             ))}
           </div>
         </div>
       </div>
+
+      <ImageModal 
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        images={imagesWater}
+        initialSlide={initialSlide}
+      />
     </>
   );
 };

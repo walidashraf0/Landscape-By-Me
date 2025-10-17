@@ -27,12 +27,12 @@ const Navbar = () => {
       <header className="fixed top-0 bg-white/95 w-full backdrop-blur-sm shadow-sm z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <Link to={"/"} className="flex items-center space-x-2">
               <Leaf className="w-8 h-8 text-green-600" />
               <span className="text-2xl font-bold text-gray-600">
                 {t("common.brandName")}
               </span>
-            </div>
+            </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
               <Link
