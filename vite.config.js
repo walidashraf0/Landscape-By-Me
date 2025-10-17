@@ -22,8 +22,7 @@ export default defineConfig({
     tailwindcss(),
     sitemap({
       hostname: "https://yourwebsite.com",
-      generateRobotsTxt: true, // ✅ creates robots.txt automatically
-      outDir: "dist", // ✅ ensure correct output directory
+      generateRobotsTxt: false, // ✅ no create robots.txt automatically
     }),
   ],
   resolve: {
