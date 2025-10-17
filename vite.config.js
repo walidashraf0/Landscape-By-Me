@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import pkg from "sitemap-webpack-plugin";
-const { SitemapPlugin } = pkg;
+import sitemap from "vite-plugin-sitemap";
+
 // Define paths for sitemap
 const paths = [
   { path: "/", priority: 1.0 },
@@ -20,10 +20,10 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    {
-      ...new SitemapPlugin({ base: "https://your-domain.com", paths }),
-      apply: "build",
-    },
+    sitemap({
+      hostname: "https://yourwebsite.com",
+      paths
+    }),
   ],
   resolve: {
     alias: {
