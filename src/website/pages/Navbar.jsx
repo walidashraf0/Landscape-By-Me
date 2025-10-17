@@ -35,36 +35,36 @@ const Navbar = () => {
             </Link>
 
             <nav className="hidden md:flex items-center space-x-8">
-              <Link
-                to="/#home"
+              <a
+                href="/#home"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.home")}
-              </Link>
-              <Link
-                to="/#services"
+              </a>
+              <a
+                href="/#services"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.services")}
-              </Link>
-              <Link
-                to="/#portfolio"
+              </a>
+              <a
+                href="/#portfolio"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.portfolio")}
-              </Link>
-              <Link
-                to="/#about"
+              </a>
+              <a
+                href="/#about"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.about")}
-              </Link>
-              <Link
-                to="/#contact"
+              </a>
+              <a
+                href="/#contact"
                 className="text-gray-700 hover:text-green-600 transition-colors capitalize"
               >
                 {t("header.contact")}
-              </Link>
+              </a>
               <div className="relative group">
                 <button className="text-gray-700 hover:text-green-600 transition-colors capitalize flex items-center space-x-1">
                   <span>{t("header.departments")}</span>

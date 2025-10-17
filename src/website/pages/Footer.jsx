@@ -108,8 +108,14 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">{t("footer.contact")}</h4>
               <ul className="space-y-2">
-                <li className="text-gray-400">{t("header.phone")}</li>
-                <li className="text-gray-400">walidashraf050@gmail.com</li>
+                <li className="text-gray-400 hover:text-green-600">
+                  <Link to="tel:+201011053973">{t("header.phone")}</Link>
+                </li>
+                <li className="text-gray-400 hover:text-green-600">
+                  <Link to="mailto:walidashraf050@gmail.com">
+                    walidashraf050@gmail.com
+                  </Link>
+                </li>
                 <li>
                   <Link
                     to="https://wa.me/+201011053973"
