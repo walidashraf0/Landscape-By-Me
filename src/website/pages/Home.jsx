@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <SEO 
-        title="Landscape In Riyadh" 
+        title="El-Walid - Landscape In Riyadh" 
         description="Professional landscaping services including waterfalls, fountains, stone decorations, glass rooms, natural grass, and more."
         keywords={["landscaping", "waterfalls", "fountains", "stone decorations", "glass rooms"]}
       />

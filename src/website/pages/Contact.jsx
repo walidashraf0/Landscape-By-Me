@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <>
       <SEO 
-        title="Contact Us - Landscape By Me" 
+        title="Contact Us - Landscape in Riyadh" 
         description="Get in touch with our landscaping experts for consultations, quotes, or any questions about our services."
         keywords={["contact", "landscaping services", "consultation", "quote"]}
       />
