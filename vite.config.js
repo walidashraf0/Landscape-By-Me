@@ -2,17 +2,17 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import { SitemapPlugin } from 'sitemap-webpack-plugin';
-
+import pkg from "sitemap-webpack-plugin";
+const { SitemapPlugin } = pkg;
 // Define paths for sitemap
 const paths = [
-  { path: '/', priority: 1.0 },
-  { path: '/شلالات-نوافير', priority: 0.8 },
-  { path: '/ديكورات-حجرية', priority: 0.8 },
-  { path: '/غرف-زجاجية', priority: 0.8 },
-  { path: '/عشب-طبيعي', priority: 0.8 },
-  { path: '/شبكات-ري', priority: 0.8 },
-  { path: '/عشب-جداري', priority: 0.8 }
+  { path: "/", priority: 1.0 },
+  { path: "/شلالات-نوافير", priority: 0.8 },
+  { path: "/ديكورات-حجرية", priority: 0.8 },
+  { path: "/غرف-زجاجية", priority: 0.8 },
+  { path: "/عشب-طبيعي", priority: 0.8 },
+  { path: "/شبكات-ري", priority: 0.8 },
+  { path: "/عشب-جداري", priority: 0.8 },
 ];
 
 // https://vite.dev/config/
@@ -21,9 +21,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     {
-      ...new SitemapPlugin({ base: 'https://your-domain.com', paths }),
-      apply: 'build'
-    }
+      ...new SitemapPlugin({ base: "https://your-domain.com", paths }),
+      apply: "build",
+    },
   ],
   resolve: {
     alias: {
